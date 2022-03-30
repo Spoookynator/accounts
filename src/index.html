@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login test</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <script src ="select.js"></script>
+    <script src ="submit.js"></script>
+    <h1 class="header">Please Log in</h1>
+    <p>
+      Should let you register a new account with username + password and also
+      log you in.
+    </p>
+    <p>No safety, like, none at all.</p>
+
+    <div id="changeFocus">
+      <p>
+        <span id="registerSelect" class="hover" style="margin-right: 20px;" onclick="loginSelected(false)">Register</span>
+        <span class="line"></span>
+        <span id="loginSelect" class="hover selected" onclick="loginSelected(true)">Login</span>
+      </p>
+    </div>
+    <hr>
+<div id="register">
+  <p>
+    <span style="padding-right: 10px">Username</span>
+    <input id = "username" type="text" required maxlength = "16"/>
+  </p>
+      <p>
+    <span style="padding-right: 15px">Password</span>
+    <input id = "password" type="text" required/>
+  </p>
+  <button onclick="submit()">Submit</button> <span id = "errorMessage"></span>
+</div>
+
+<h2 id = "loggedInMsg">Logged out</h2>
+  </body>
+</html>
